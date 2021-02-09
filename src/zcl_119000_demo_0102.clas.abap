@@ -33,6 +33,11 @@ CLASS zcl_119000_demo_0102 IMPLEMENTATION.
     carrier_id = 'LH'. "...Zuweisungsoperator
     DATA connection_id TYPE /dmo/connection_id VALUE '0400'. "...statischer Vorbelegung
     DATA(flight_date) = '20210202'. "...Inlinedeklaration
+
+    CLEAR carrier_id. "Initialisierung
+
+    "Deklaration fixer Datenobjekte
+    CONSTANTS co_pi TYPE p LENGTH 2 DECIMALS 2 VALUE '3.14'.
   ENDMETHOD.
 
 ENDCLASS.
