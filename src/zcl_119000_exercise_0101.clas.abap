@@ -25,10 +25,10 @@ CLASS zcl_119000_exercise_0101 IMPLEMENTATION.
     begin_date = '20210807'.
     end_date = '20210828'.
 
-    out->write( |Travel ID: | && travel_id ).
-    out->write( |Description: | && description ).
-    out->write( |Begin Date: | && begin_date ).
-    out->write( |End Date: | && end_date ).
+    out->write( |Reisenummer: | && travel_id ).
+    out->write( |Beschreibung: | && description ).
+    out->write( |Beginn der Reise: | && begin_date ).
+    out->write( |Ende der Reise: | && end_date ).
   ENDMETHOD.
 
 ENDCLASS.
