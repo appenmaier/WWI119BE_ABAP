@@ -4,7 +4,8 @@ CLASS zcl_119000_exercise_0102 DEFINITION
   CREATE PUBLIC .
 
   PUBLIC SECTION.
-    INTERFACES if_oo_adt_classrun.
+
+    INTERFACES if_oo_adt_classrun .
   PROTECTED SECTION.
   PRIVATE SECTION.
 ENDCLASS.
