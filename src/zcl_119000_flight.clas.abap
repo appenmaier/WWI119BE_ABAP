@@ -7,7 +7,7 @@ CLASS zcl_119000_flight DEFINITION
     CLASS-METHODS get_latest_travel
       RETURNING VALUE(r_travel) TYPE /dmo/travel.
     CLASS-METHODS get_all_travels
-      RETURNING VALUE(r_travels) TYPE /dmo/t_travel.
+      RETURNING VALUE(r_travels) TYPE z119000_travels.
   PROTECTED SECTION.
   PRIVATE SECTION.
 ENDCLASS.
@@ -27,7 +27,7 @@ CLASS zcl_119000_flight IMPLEMENTATION.
 
   METHOD get_all_travels.
     SELECT FROM /dmo/travel FIELDS *
-     INTO TABLE @r_travels.
+     INTO CORRESPONDING FIELDS OF TABLE @r_travels.
   ENDMETHOD.
 
 ENDCLASS.
