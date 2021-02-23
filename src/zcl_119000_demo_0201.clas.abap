@@ -12,7 +12,8 @@ ENDCLASS.
 
 
 
-CLASS zcl_119000_demo_0201 IMPLEMENTATION.
+CLASS ZCL_119000_DEMO_0201 IMPLEMENTATION.
+
 
   METHOD if_oo_adt_classrun~main.
     "Deklaration von Strukturen
@@ -40,5 +41,4 @@ CLASS zcl_119000_demo_0201 IMPLEMENTATION.
     flight_xt = CORRESPONDING #( connection ).
     flight_xt = CORRESPONDING #( BASE ( flight_xt ) flight ).
   ENDMETHOD.
-
 ENDCLASS.

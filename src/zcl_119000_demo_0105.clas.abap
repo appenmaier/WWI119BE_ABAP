@@ -12,7 +12,8 @@ ENDCLASS.
 
 
 
-CLASS zcl_119000_demo_0105 IMPLEMENTATION.
+CLASS ZCL_119000_DEMO_0105 IMPLEMENTATION.
+
 
   METHOD if_oo_adt_classrun~main.
     DATA text TYPE string VALUE 'Hallo'.
@@ -36,5 +37,4 @@ CLASS zcl_119000_demo_0105 IMPLEMENTATION.
 
     out->write( |Länge von '   ': { strlen( '   ' ) }| ).
   ENDMETHOD.
-
 ENDCLASS.

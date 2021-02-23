@@ -12,7 +12,8 @@ ENDCLASS.
 
 
 
-CLASS zcl_119000_exercise_0101 IMPLEMENTATION.
+CLASS ZCL_119000_EXERCISE_0101 IMPLEMENTATION.
+
 
   METHOD if_oo_adt_classrun~main.
     DATA travel_id TYPE /dmo/travel_id.
@@ -30,5 +31,4 @@ CLASS zcl_119000_exercise_0101 IMPLEMENTATION.
     out->write( |Beginn der Reise: | && begin_date ).
     out->write( |Ende der Reise: | && end_date ).
   ENDMETHOD.
-
 ENDCLASS.

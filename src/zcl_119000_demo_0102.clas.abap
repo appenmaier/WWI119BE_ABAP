@@ -12,7 +12,8 @@ ENDCLASS.
 
 
 
-CLASS zcl_119000_demo_0102 IMPLEMENTATION.
+CLASS ZCL_119000_DEMO_0102 IMPLEMENTATION.
+
 
   METHOD if_oo_adt_classrun~main.
     "Wichtige ABAP-Standardtypen
@@ -39,5 +40,4 @@ CLASS zcl_119000_demo_0102 IMPLEMENTATION.
     "Deklaration fixer Datenobjekte
     CONSTANTS co_pi TYPE p LENGTH 2 DECIMALS 2 VALUE '3.14'.
   ENDMETHOD.
-
 ENDCLASS.

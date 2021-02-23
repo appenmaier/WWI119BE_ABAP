@@ -12,7 +12,8 @@ ENDCLASS.
 
 
 
-CLASS zcl_119000_demo_0202 IMPLEMENTATION.
+CLASS ZCL_119000_DEMO_0202 IMPLEMENTATION.
+
 
   METHOD if_oo_adt_classrun~main.
     "Deklaration interner Tabellen
@@ -75,5 +76,4 @@ CLASS zcl_119000_demo_0202 IMPLEMENTATION.
     "Größe von internen Tabellen
     DATA(number_of_connections) = lines( connections ).
   ENDMETHOD.
-
 ENDCLASS.

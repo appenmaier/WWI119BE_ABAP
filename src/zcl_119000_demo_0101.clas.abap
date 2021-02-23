@@ -12,10 +12,10 @@ ENDCLASS.
 
 
 
-CLASS zcl_119000_demo_0101 IMPLEMENTATION.
+CLASS ZCL_119000_DEMO_0101 IMPLEMENTATION.
+
 
   METHOD if_oo_adt_classrun~main.
     out->write( 'Hallo Welt!' ). "Ausgabe
   ENDMETHOD.
-
 ENDCLASS.

@@ -12,7 +12,8 @@ ENDCLASS.
 
 
 
-CLASS zcl_119000_exercise_0102 IMPLEMENTATION.
+CLASS ZCL_119000_EXERCISE_0102 IMPLEMENTATION.
+
 
   METHOD if_oo_adt_classrun~main.
     DATA operand1 TYPE p LENGTH 16 DECIMALS 2 VALUE '3.14'.
@@ -38,5 +39,4 @@ CLASS zcl_119000_exercise_0102 IMPLEMENTATION.
 
     out->write( |Ergebnis: | && result ).
   ENDMETHOD.
-
 ENDCLASS.

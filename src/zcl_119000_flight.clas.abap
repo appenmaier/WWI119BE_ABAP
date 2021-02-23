@@ -14,7 +14,8 @@ ENDCLASS.
 
 
 
-CLASS zcl_119000_flight IMPLEMENTATION.
+CLASS ZCL_119000_FLIGHT IMPLEMENTATION.
+
 
   METHOD get_latest_travel.
     DATA(today) = cl_abap_context_info=>get_system_date( ).
@@ -25,9 +26,9 @@ CLASS zcl_119000_flight IMPLEMENTATION.
     r_travel = travels[ 1 ].
   ENDMETHOD.
 
+
   METHOD get_all_travels.
     SELECT FROM /dmo/travel FIELDS *
      INTO CORRESPONDING FIELDS OF TABLE @r_travels.
   ENDMETHOD.
-
 ENDCLASS.

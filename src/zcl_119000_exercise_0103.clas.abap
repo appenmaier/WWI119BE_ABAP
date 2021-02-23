@@ -12,7 +12,8 @@ ENDCLASS.
 
 
 
-CLASS zcl_119000_exercise_0103 IMPLEMENTATION.
+CLASS ZCL_119000_EXERCISE_0103 IMPLEMENTATION.
+
 
   METHOD if_oo_adt_classrun~main.
     DATA text_old TYPE string VALUE 'uahdfgeUaeOoiaEEsseuuu'.
@@ -27,5 +28,4 @@ CLASS zcl_119000_exercise_0103 IMPLEMENTATION.
     out->write( |alter Text: { text_old }| ).
     out->write( |neuer Text: { text_new }| ).
   ENDMETHOD.
-
 ENDCLASS.
