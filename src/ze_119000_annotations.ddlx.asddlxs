@@ -1,0 +1,48 @@
+@Metadata.layer: #CUSTOMER
+@UI.headerInfo:{
+    typeName: 'Flight',
+    typeNamePlural: 'Flights'
+}
+annotate view ZI_119000_Annotations with
+{
+  @UI.facet: [{ type: #IDENTIFICATION_REFERENCE, label: 'General Information' }]
+  @UI:{
+        selectionField: [{ position: 10 }],
+        lineItem: [{ position: 10 }],
+        identification: [{ position: 10 }]
+  }
+  CarrierId;
+  @UI:{
+    selectionField: [{ position: 20 }],
+    lineItem: [{ position: 20 }],
+    identification: [{ position: 20 }]
+  }
+  ConnectionId;
+  @UI:{
+      selectionField: [{ position: 30 }],
+      lineItem: [{ position: 30 }],
+      identification: [{ position: 30 }]
+  }
+  FlightDate;
+  @UI:{
+      lineItem: [{ position: 40 }],
+      identification: [{ position: 40 }]
+  }
+  Price;
+  @UI.hidden: true
+  CurrencyCode;
+  @UI:{
+        selectionField: [{ position: 50 }],
+        lineItem: [{ position: 50 }],
+        identification: [{ position: 50 }]
+  }
+  PlaneTypeId;
+  @UI:{
+        identification: [{ position: 60 }]
+  }
+  SeatsMax;
+  @UI:{
+        identification: [{ position: 70 }]
+  }
+  SeatsOccupied;
+}
